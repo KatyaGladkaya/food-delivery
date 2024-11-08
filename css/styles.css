@@ -1,0 +1,509 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+
+  cursor: pointer;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+}
+
+/*header*/
+.header {
+  width: 100%;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+padding: 10px 0px
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-button, .main-button {
+  display: none;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger-btn-icon {
+  fill: #7eb101;
+}
+
+.burger-btn-icon:active {
+fill: #ffe550;}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+
+  }
+
+  .header-nav {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 28px;
+    
+  }
+
+  .nav-link {
+    font-family: inherit;
+    display: block;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #bbf330;
+  }
+
+  .header-button {
+    display: block;
+    border-radius: 30px;
+    min-width: 98px;
+    height: 32px;
+    background: #bbf330;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #2c2c2c;
+    padding: 6px 17px;
+  }
+
+  .header-button:hover,
+  .header-button:focus,
+  .header-button:active {
+      background: #ffe450;
+  }
+ 
+}
+
+@media screen and (min-width: 1280px) {
+
+.nav-link {
+        color: #2c2c2c;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link:active {
+        font-weight: 700;
+    }
+}
+
+/*hero-section*/
+
+.hero-section {
+    padding-top: 60px;
+    padding-bottom: 91px;
+}
+
+
+.hero-img{display: none;}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    color: #2c2c2c;
+}
+
+.hero-text {
+    line-height: 1.5;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.main-button {
+    display: block;
+    border-radius: 30px;
+    min-width: 98px;
+    height: 32px;
+    background: #bbf330;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #2c2c2c;
+    padding: 6px 17px;
+}
+
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+    background: #ffe450;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .hero-section {
+        padding-top: 60px;
+            padding-bottom: 42px;
+        }
+
+
+.hero-section-container {
+    display: flex;
+}
+
+.hero-section-text {
+    display: block; 
+}
+
+.hero-title {
+    font-size: 42px;
+    margin-bottom: 44px;
+    min-width: 537px;
+}
+
+.hero-text {
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 336px;
+}
+
+.hero-img{display: block;
+max-width: 320px;
+border: 14px solid #ffe550;
+    padding:0;
+    border-radius: 50%;
+    margin-top: 89px;
+    margin-left: -167px;
+
+  
+
+}
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero-section {
+            padding-top: 14px;
+            padding-bottom: 69px;
+        }
+    
+        .hero-section-container {
+            display: flex;
+            align-items: center;
+        }
+    
+        .hero-section-text {
+            display: block;
+            max-width: 511px;
+            margin-right: 143px;
+        }
+    
+        .hero-title {
+            font-size: 48px;
+            margin-bottom: 28px;
+        }
+    
+        .hero-text {
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+                .hero-img {
+                    padding: 0;
+                    max-width: 580px;
+                    margin: 0;
+                border: 26px solid #ffe550;}
+}
+
+/*benefits-section*/
+
+.benefits-section {
+    padding-top: 0;
+    padding-bottom: 132px;
+}
+
+.apple-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.benefits-text {
+    line-height: 1.43;
+    font-size: 14px;
+    margin-bottom: 28px;
+   
+}
+
+.benefits-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.benefits-list{margin-bottom: 28px;}
+
+.benefits-icon{fill: #7eb101;
+    margin-left: 7px;
+    margin-bottom: 16px;
+
+}
+
+.benefits-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+   
+}
+
+.benefits-item-text {
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.benefits-btn-container{display: flex;
+gap:24px}
+
+.benefits-button {
+    border: 2px solid #7eb101;
+    background: #fff;
+    padding: 10px 20px;
+        border-radius: 30px;
+        width: 106px;
+        height: 40px;
+        font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #2c2c2c;
+
+    
+}
+
+.more-btn{background-color: transparent;
+border:none;
+font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000;
+width: 83px;
+    height: 34px;
+padding: 6px 0px;
+display: flex;
+align-items: center;}
+
+    .more-btn-icon{fill: #000;
+        margin-right: auto;
+    
+    }
+
+
+@media screen and (min-width: 768px) {
+
+.benefits-section {
+        padding-bottom: 191px;
+        padding-right: 116px;
+    }
+.benefits-section-container{display: flex;
+flex-wrap: wrap;
+align-items: start;
+padding-right: 0;}
+
+.apple-img {
+    display: block;
+    margin-left: 38px;
+    margin-bottom: 60px;
+
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.benefits-text {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 500px;
+
+}
+
+.benefits-list-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 80px;
+}
+
+.fast{min-width: 288px;}
+
+.benefits-list{margin-bottom: 20px;}
+}
+
+@media screen and (min-width: 1280px) {
+
+.benefits-section {
+        background-color: #ffe550;
+        padding-top: 113px;
+        padding-bottom: 124px;
+    }
+
+        .benefits-section-container {
+            display: flex;
+            align-items: center;
+            
+        }
+
+.picture-container {
+    width: 502px;
+        /* Ширина контейнера */
+        height: 502px;
+        /* Висота контейнера */
+        background-color:#fefefe;
+        /* Напівпрозорий чорний фон */
+        display: flex;
+        /* Використовуємо Flexbox для вирівнювання зображення */
+        justify-content: center;
+        /* Вирівнюємо по горизонталі */
+        align-items: center;
+        /* Вирівнюємо по вертикалі */
+        border-radius: 50%;
+        border-radius: 100%;
+            stroke-width: 5px;
+            stroke: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+}
+
+        .apple-img {
+            margin-left: 84px;
+            margin-top: -78px;
+        }
+    
+        .benefits-section-text {
+            display: block;
+            max-width: 573px;
+            margin-left: 90px;
+        }
+
+    
+        .benefits-text {
+            line-height: 1.5;
+            margin-bottom: 40px;
+            margin-right: 73px;
+        }
+    
+        .benefits-list {
+            margin-bottom: 32px;
+        }
+    
+        .benefits-list-container {
+            display: flex;
+            gap: 67px;
+        }
+    
+        .benefits-list-item {}
+    
+        .benefits-item-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    
+        .benefits-item-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    
+        .benefits-button {
+            border: 2px solid #7eb101;
+            background: #fff;
+        }
+
+}
+
+
