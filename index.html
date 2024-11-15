@@ -44,6 +44,25 @@
         <button type="button" class="header-button">Order Now</button>
       </div>
     </header>
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <ul class="nav-list mob-menu-nav-list">
+          <li>
+            <a
+              class="nav-link nav-link-home mob-nav-link mob-nav-link-home"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li><a class="nav-link mob-nav-link" href="">About</a></li>
+          <li><a class="nav-link mob-nav-link" href="">Service</a></li>
+          <li><a class="nav-link mob-nav-link" href="">Menu</a></li>
+          <li><a class="nav-link mob-nav-link" href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
     <main>
       <section class="hero-section">
         <div class="hero-section-container container">
@@ -425,5 +444,52 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-close-btn">
+          <svg class="modal-close-btn-icon" width="12">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-title">Order Form</p>
+        <form class="form" name="form">
+          <div class="modal-input-container">
+            <label class="form-label" for="user-name">Name</label>
+            <input
+              type="text"
+              class="form-input"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+              title="Not a valid name"
+              required
+            />
+          </div>
+          <div class="modal-input-container">
+            <label class="form-label" for="user-phone">Phone number</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
+            />
+          </div>
+          <div class="modal-input-container">
+            <label class="form-label" for="user-email">E-mail</label>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button class="form-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
